@@ -88,7 +88,7 @@ footer img   {
 .hero           {
   min-height: 800px;
   text-align: center;
-  background: linear-gradient(rgba(10, 38, 255, 0.76),#FFFFFF);
+  background: linear-gradient(rgba(10, 38, 255, 0.76),#FFFFFF),url(https://media.discordapp.net/attachments/891795853096935435/899110194078949416/image2.jpg);
   background-size: cover;
 }
 .hero-content   {
