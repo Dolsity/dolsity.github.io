@@ -325,7 +325,7 @@ footer img   {
 }
 
 .github-link {
-    background: transparent url("img/ic.svg");
+    background: transparent url("https://raw.githubusercontent.com/Dolsity/dolsity.github.io/9b9af0e5c739c3865677f03cb4ca19a00bdd4450/img/ic.svg");
     background-size: cover;
     border: none;
     text-decoration: none;
@@ -334,7 +334,7 @@ footer img   {
     height: 2rem;
 }
 .website-link {
-    background: transparent url("img/page.svg");
+    background: transparent url("https://raw.githubusercontent.com/Dolsity/dolsity.github.io/9b9af0e5c739c3865677f03cb4ca19a00bdd4450/img/page.svg");
     background-size: cover;
     border: none;
     text-decoration: none;
