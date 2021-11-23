@@ -49,7 +49,6 @@ header   {
 nav     {
   width: 50%;
   display: inline-block;
-
   text-align: right;
 }
 nav ul   {
@@ -95,10 +94,6 @@ footer img   {
 .hero-content   {
   color: #FFF;
   padding-top: 130px;
-}
-.hero-content h1   {
-  font-size: 100px;
-  margin: 0;
 }
 .hero-content p    {
   font-size: 50px;
@@ -182,4 +177,33 @@ footer img   {
   font-weight: bold;
   color: white;
   text-align: center;
+}
+.hero-content h1 {
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  font-size: 100px;
+  margin: 0;
+}
+.hero-content h1 span.typed-text {
+  font-weight: normal;
+}
+.hero-content h1 span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.hero-content h1 span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }
