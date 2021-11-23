@@ -42,7 +42,7 @@ header   {
 }
   /* Style the "active" element to highlight the current page */
  .active   {
-    background-color: rgba(255, 38, 30, 0.63);
+    background-color: rgba(63, 25, 255, 0.67);
     color: white;
 }
 /* main navigation */
@@ -89,7 +89,7 @@ footer img   {
 .hero           {
   min-height: 800px;
   text-align: center;
-  background: linear-gradient(rgba(255, 30, 34, 0.53),#FBDEDF),url(https://github.com/Dolsity/dolsity.github.io/blob/main/img/smoked.png?raw=true);
+  background: linear-gradient(rgba(63, 25, 255, 0.64),#FBDEDF),url(https://github.com/Dolsity/dolsity.github.io/blob/main/img/smoked.png?raw=true);
   background-size: cover;
 }
 .hero-content   {
