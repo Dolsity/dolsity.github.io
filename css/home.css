@@ -70,6 +70,89 @@ nav ul li a:hover   {
   background: #444;
 }
 
+/* styling our main content */
+.hero           {
+  min-height: 800px;
+  text-align: center;
+  background: linear-gradient(rgba(63, 25, 255, 0.64),#FBDEDF),url(https://github.com/Dolsity/dolsity.github.io/blob/main/img/smoked.png?raw=true);
+  background-size: cover;
+}
+.hero-content   {
+  color: #FFF;
+  padding-top: 130px;
+}
+
+
+
+.hero-content h1 {
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  font-size: 100px;
+  margin: 0.2;
+}
+.hero-content h1 span.typed-text {
+  font-weight: normal;
+}
+.hero-content h1 span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.hero-content h1 span.cursor.typing {
+  animation: none;
+}
+
+
+
+
+.hero-content p    {
+  font-size: 40px;
+  margin: 0 auto 10px;
+}
+.hero-content a img   {
+  width: 50px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border-radius: 5px;
+  width: 95px;
+  margin: 0 auto 10px;
+}
+
+/* basic site sections / my skills */
+.site-section   {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background: #F7DDDD;
+}
+.site-section-inside   {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-header {
+  text-align: left;
+  margin-bottom: 30px;
+}
+.section-header h2  {
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #777;
+}
+.section-header p  {
+  font-size: 20px;
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #777;
+}
+
 /* styling our footer */
 footer   {
   background: #222;
@@ -84,146 +167,11 @@ footer img   {
   margin: 0 auto 10px;
 }
 
-/* styling our main content */
-.hero           {
-  min-height: 800px;
-  text-align: center;
-  background: linear-gradient(rgba(63, 25, 255, 0.64),#FBDEDF),url(https://github.com/Dolsity/dolsity.github.io/blob/main/img/smoked.png?raw=true);
-  background-size: cover;
-}
-.hero-content   {
-  color: #FFF;
-  padding-top: 130px;
-}
-.hero-content h1   {
-  font-size: 100px;
-  margin: 0;
-}
-.hero-content p    {
-  font-size: 50px;
-}
-.hero-content a    {
-  display: inline-block;
-  color: #FFF;
-  border: 3px solid #FFF;
-  border-radius: 3px;
-  padding: 15px 30px;
-  margin-right: 20px;
-  text-decoration: none;
-  font-size: 28px;
-}
-.banner-btn {
-    margin: 70xp auto 0;
-}
-.banner-btn a{
-    width:150xp;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 10px;
-    padding: 12px 0;
-    color: #fff;
-    border: .5px solid #fff;
-    position: relative;
-    bottom: -6px;
-    z-index: 1;
-    transition: color 0.5s;
-}
-.banner-btn a span {
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    z-index: -1;
-    transition: 0.5s;
-}
-.banner-btn a:hover span{
-    width: 100%;
-}
-.banner-btn a:hover{
-    color: #000;
-}
 
-/* basic site sections */
-.site-section   {
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-.site-section-secondary   {
-  background: #EFEFEF;
-}
-.site-section-inside   {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.section-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.section-header h2  {
-  font-size: 30px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 300;
-  color: #777;
-}
-
-/* feature boxes */
-.feature-box   {
-  display: inline-block;
-  width: 33%;
-  padding: 20px 30px;
-}
-.feature-box img  {
-  margin-bottom: 12px;
-  width: 80px;
-}
-.feature-box h5   {
-  font-size: 20px;
-  color: #999;
-  text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin: 0;
-}
-
-/* testimonial boxes */
-.testimonial-box   {
-  display: inline-block;
-  width: 33%;
-  padding: 20px 30px;
-}
-.testimonial-content   {
-  background: #FFF;
-  padding: 15px;
-  border-radius: 4px;
-  margin-bottom: 15px;
-}
-.testimonial-author           {
-
-}
-.testimonial-author img {
-  float: left;
-  width: 80px;
-  border-radius: 50%;
-  margin-right: 15px;
-  vertical-align: middle;
-}
-.testimonial-author h5   {
-  font-size: 18px;
-  margin: 0;
-  padding-top:15px;
-}
-.testimonial-author span {
-  font-size: 14px;
-}
-
-#hero-content {
-  padding-top: 50px;
-  font-size: 80px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }
