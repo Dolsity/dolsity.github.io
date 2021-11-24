@@ -81,9 +81,6 @@ nav ul li a:hover   {
   color: #FFF;
   padding-top: 130px;
 }
-
-
-
 .hero-content h1 {
   padding: 0.5rem;
   font-weight: bold;
@@ -106,10 +103,6 @@ nav ul li a:hover   {
 .hero-content h1 span.cursor.typing {
   animation: none;
 }
-
-
-
-
 .hero-content p    {
   font-size: 40px;
   margin: 0 auto 10px;
@@ -166,7 +159,6 @@ footer img   {
   width: 80px;
   margin: 0 auto 10px;
 }
-
 
 @keyframes blink {
   0%  { background-color: #ccc; }
