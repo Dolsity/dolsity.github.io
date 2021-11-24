@@ -139,7 +139,7 @@ nav ul li a:hover   {
   font-weight: 300;
   color: #777;
 }
-.section-header p  {
+.section-header p  { 
   font-size: 20px;
   letter-spacing: 4.5px;
   text-transform: uppercase;
@@ -147,10 +147,12 @@ nav ul li a:hover   {
   color: #777;
 }
 
+
+
 /* styling our footer */
 footer   {
   background: #212121;
-  color: #FFF;
+  color: #777;
   padding: 40px;
   text-align: center;
 }
