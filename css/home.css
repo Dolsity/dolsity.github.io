@@ -118,34 +118,77 @@ nav ul li a:hover   {
 }
 
 /* basic site sections / my skills */
-.site-section   {
-  padding-bottom: 50px;
-  padding-top: 50px;
-  background: #212121;
+/* SKILLS (SECTION 2 / 3) *****************************************************/
+
+.skills-container {
+    background: #212121;
+    display: grid;
+    grid-template-columns: minmax(1rem, auto) minmax(auto, 50rem) minmax(1rem, auto);
+    grid-template-rows: 1fr;
 }
-.site-section-inside   {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
+
+.skills {
+    grid-row: 1 / -1;
+    grid-column: 2 / 2;
+    color: #37474f;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 50rem;
 }
-.section-header {
-  text-align: left;
-  margin-bottom: 30px;
+
+.skills h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
 }
-.section-header h2  {
-  font-size: 40px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 300;
-  color: #777;
+
+.skills h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: #777;
+    margin-bottom: 1.5rem;
 }
-.section-header p  { 
-  font-size: 20px;
-  letter-spacing: 4.5px;
-  text-transform: uppercase;
-  font-weight: 300;
-  color: #777;
+
+.skills-cards-container {
+    display: flex;
+    justify-content: space-between;
 }
+
+.skills-card {
+    font-family: "Roboto", sans-serif;
+    color: #777;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 0.11rem;
+}
+
+.skills-card h3 {
+    font-size: 1.2rem;
+    color: #777;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-decoration: solid;
+    letter-spacing: 0.08rem;
+}
+
+.skills-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-card li {
+    margin: 0.5rem 0;
+}
+
+
 /* my work 3/3 */
 
 /* PROJECTS (SECTION 3 / 3) */
