@@ -335,13 +335,13 @@ nav ul li a:hover   {
 footer   {
   background: #212121;
   color: #777;
-  padding: 40px;
+  padding: 4px;
   text-align: center;
 }
 footer img   {
   display: block;
   border-radius: 5px;
-  width: 80px;
+  width: 60px;
   margin: 0 auto 10px;
 }
 
