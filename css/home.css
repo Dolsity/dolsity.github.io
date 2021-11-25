@@ -23,6 +23,11 @@ header   {
   color: #FFF;
   padding: 20px 30px;
   padding: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  
 }
 
 /* logo */
