@@ -1,0 +1,385 @@
+/* resetting browser stuff */
+*     {
+  box-sizing: border-box;
+}
+html,
+body   {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* styling our overall page */
+body     {
+  background: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* styling our header */
+header   {
+  background: #212121;
+  color: #FFF;
+  padding: 20px 30px;
+}
+
+/* logo */
+#logo         {
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  width: 49%;
+}
+#logo img    {
+  width: 50px;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#logo span   {
+  display: inline-block;
+}
+  /* Style the "active" element to highlight the current page */
+ .active   {
+    background-color: rgba(63, 25, 255, 0.64);
+    color: white;
+}
+/* main navigation */
+nav     {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}
+nav ul   {
+  list-style: none;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a    {
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: 0.3s ease all;
+}
+nav ul li a:hover   {
+  background: #444;
+}
+
+/* styling our main content */
+.hero           {
+  min-height: 800px;
+  text-align: center;
+  background: linear-gradient(rgba(63, 25, 255, 0.64),#FBDEDF),url(https://github.com/Dolsity/dolsity.github.io/blob/main/img/zoom.jpg?raw=true);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.hero-content   {
+  color: #FFF;
+  padding-top: 130px;
+}
+.hero-content h1 {
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  font-size: 100px;
+  margin: 0.2;
+}
+.hero-content h1 span.typed-text {
+  font-weight: normal;
+}
+.hero-content h1 span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.hero-content h1 span.cursor.typing {
+  animation: none;
+}
+.hero-content p    {
+  font-size: 40px;
+  margin: 0 auto 10px;
+}
+.hero-content a img   {
+  width: 50px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border-radius: 5px;
+  width: 95px;
+  margin: 0 auto 10px;
+}
+
+/* basic site sections / my skills */
+/* SKILLS (SECTION 2 / 3) *****************************************************/
+
+.skills-container {
+    background: #212121;
+    display: grid;
+    grid-template-columns: minmax(1rem, auto) minmax(auto, 50rem) minmax(1rem, auto);
+    grid-template-rows: 1fr;
+}
+
+.skills {
+    grid-row: 1 / -1;
+    grid-column: 2 / 2;
+    color: #37474f;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 50rem;
+}
+
+.skills h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+.skills h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+
+.skills-cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-card {
+    font-family: "Roboto", sans-serif;
+    color: #777;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 0.11rem;
+}
+
+.skills-card h3 {
+    font-size: 1.2rem;
+    color: #777;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-decoration: solid;
+    letter-spacing: 3.5px;
+}
+
+.skills-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-card li {
+    margin: 0.5rem 0;
+    letter-spacing: 2px;
+}
+
+/* PROJECTS (SECTION 3 / 3) */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: minmax(1rem, auto) minmax(auto, 50rem) minmax(1rem, auto);
+    background: linear-gradient(rgba(63, 25, 255, 0.64),#FBDEDF),url(https://github.com/Dolsity/dolsity.github.io/blob/main/img/smoked.png?raw=true);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.projects {
+    grid-row: 1 / -1;
+    grid-column: 2 / 2;
+    color: #37474f;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.projects h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    color: rgba(55, 71, 79, 1);
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+.projects h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 200;
+    color: rgba(55, 71, 79, 0.9);
+    margin-bottom: 1.5rem;
+}
+
+.projects h2 a {
+    color: rgb(55, 71, 79);
+    text-decoration: none;
+    border-bottom: 1px rgb(55, 71, 79) dotted;
+}
+
+.projects-cards-container {
+    width: 100%;
+    display: flex;
+    align-items: space-between;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.projects-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 10rem;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.projects-card h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-decoration: solid;
+    letter-spacing: 0.08rem;
+    transition: margin 0.5s;
+}
+
+.projects-card:hover h3 {
+    margin-top: -13.5rem;
+    transition: margin 0.5s;
+}
+
+#upcoming {
+    background: url("https://github.com/Dolsity/dolsity.github.io/blob/main/img/gta-v.jpg?raw=true")
+        no-repeat center center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 900px rgba(91, 77, 117, 0.7);
+}
+
+#fora {
+    background: url("https://github.com/Dolsity/dolsity.github.io/blob/main/img/fora.jpg?raw=true") no-repeat
+        center center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 900px rgba(91, 77, 117, 0.7);
+}
+
+#upcoming2 {
+    background: url("https://github.com/Dolsity/dolsity.github.io/blob/main/img/shoot.jpeg?raw=true") no-repeat
+        center center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 900px rgba(91, 77, 117, 0.7);
+}
+
+.project-description {
+    position: absolute;
+    top: 10rem;
+    transition: top 0.5s;
+    padding: 0 1rem;
+    font-weight: 400;
+}
+
+.projects-card:hover section {
+    top: 2rem;
+    transition: top 0.5s;
+}
+
+.projects-card a {
+    text-decoration: none;
+}
+
+.github-link {
+    background: transparent url("https://raw.githubusercontent.com/Dolsity/dolsity.github.io/d8705f13e0ff6b95f132ce6b72f088ef8a703175/img/ic.svg");
+    background-size: cover;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+}
+.website-link {
+    background: transparent url("https://raw.githubusercontent.com/Dolsity/dolsity.github.io/d8705f13e0ff6b95f132ce6b72f088ef8a703175/img/page.svg");
+    background-size: cover;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/* styling our footer */
+footer   {
+  background: #212121;
+  color: #777;
+  padding: 40px;
+  text-align: center;
+}
+footer img   {
+  display: block;
+  border-radius: 5px;
+  width: 80px;
+  margin: 0 auto 10px;
+}
+
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
