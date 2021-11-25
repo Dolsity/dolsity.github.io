@@ -22,6 +22,7 @@ header   {
   background: #212121;
   color: #FFF;
   padding: 20px 30px;
+  padding: 5px;
 }
 
 /* logo */
@@ -194,7 +195,7 @@ nav ul li a:hover   {
 .projects-container {
     display: grid;
     grid-template-columns: minmax(1rem, auto) minmax(auto, 50rem) minmax(1rem, auto);
-    background: linear-gradient(rgba(63, 25, 255, 0.64),#FBDEDF),url(https://github.com/Dolsity/dolsity.github.io/blob/main/img/smoked.png?raw=true);
+    background: linear-gradient(rgba(251, 35, 255, 0.59),#FBDEDF),url(https://github.com/Dolsity/dolsity.github.io/blob/main/img/smoked.png?raw=true);
     background-attachment: fixed;
     background-size: cover;
 }
