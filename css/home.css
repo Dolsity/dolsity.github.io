@@ -176,7 +176,7 @@ nav ul li a:hover   {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     text-decoration: solid;
-    letter-spacing: 0.08rem;
+    letter-spacing: 3.5px;
 }
 
 .skills-card ul {
@@ -186,10 +186,8 @@ nav ul li a:hover   {
 
 .skills-card li {
     margin: 0.5rem 0;
+    letter-spacing: 2px;
 }
-
-
-/* my work 3/3 */
 
 /* PROJECTS (SECTION 3 / 3) */
 
