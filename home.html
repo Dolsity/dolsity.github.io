@@ -10,8 +10,6 @@
   
    <!-- attached stylesheet --> 
   <link rel="stylesheet" href="css/home.css">
-  <script src="scripts/script.js"></script> 
-  <script src="scripts/alert.js"></script> 
   </head>
   <body>
     
@@ -21,7 +19,7 @@
       
       <!-- main logo -->
       <a id="logo" href="home.html">
-        <img src="img/dolsity.png" alt="Logo">
+        <img src="https://github.com/Dolsity/dolsity.github.io/blob/main/img/dolsity.png?raw=true" alt="Logo">
         <span>Dolsity</span>
         
         </a>
@@ -44,7 +42,7 @@
       
       <!-- hero content 1/3 -->
       <div class="hero">
-        
+         
         <!-- content for the hero -->
         <div class="hero-content">
           <h1><span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
@@ -112,7 +110,7 @@
       <section class="projects" id="projects">
          <!-- TITLES -->
          <h1>My Work</h1>
-         <h2>Want to see more work? Check out my <a href="maintenance.html"
+         <h2>Want to see more work? Check out my <a href="#"
                target="blank">GitHub</a>.</h2>
          <!-- CARDS CONTAINER -->
          <section class="projects-cards-container">
@@ -122,10 +120,10 @@
                <section class="project-description">
                   <section class="project-link-container">
                      <button class="project-button github-link"
-                        onclick="window.open('maintenance.html', '_blank');"
+                        onclick="window.open('#Fora-source-code', '_blank');"
                         aria-label="GitHub for Fora"></button>
                      <button class="project-button website-link"
-                        onclick="window.open('maintenance.html', '_blank');"
+                        onclick="window.open('#Fora-website', '_blank');"
                         aria-label="Project link for Fora"></button> 
                   </section>
                   <p><em>Fora bot description</em></p>
@@ -137,10 +135,10 @@
                <section class="project-description">
                   <section class="project-link-container">
                      <button class="project-button github-link"
-                        onclick="window.open('maintenance.html', '_blank');"
+                        onclick="window.open('#Website-source-code', '_blank');"
                         aria-label="GitHub for upcoming project"></button>
                      <button class="project-button website-link"
-                        onclick="window.open('maintenance.html', '_blank');"
+                        onclick="window.open('#website', '_blank');"
                         aria-label="Project link for Upcoming..."></button>
                   </section>
                   <p><em>Upcoming...</em></p>
@@ -152,10 +150,10 @@
                <section class="project-description">
                   <section class="project-link-container">
                      <button class="project-button github-link"
-                        onclick="window.open('maintenance.html', '_blank');"
+                        onclick="window.open('#Website-source-code', '_blank');"
                         aria-label="GitHub for upcoming project"></button>
                      <button class="project-button website-link"
-                        onclick="window.open('maintenance.html', '_blank');"
+                        onclick="window.open('#website', '_blank');"
                         aria-label="Project link for Upcoming..."></button>
                   </section>
                   <p><em>Upcoming...</em></p>
@@ -168,10 +166,55 @@
       
       <!-- the footer -->
       <footer>
-        <img src="img/dolsity.png" alt="Footer Logo">
+        <img src="https://github.com/Dolsity/dolsity.github.io/blob/main/img/dolsity.png?raw=true" alt="Footer Logo">
         <span>Dolsity<br>Dolsity © 2021</span>
           
         </footer>
+        
+        <script>
+        const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["Subscribe to Dolsity.", "Join Dolsity's world.", "Enjoy."];
+const typingDelay = 100; 
+const erasingDelay = 50;
+const newTextDelay = 10; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+  	setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+	if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+        </script>
 
 </body>
 </html>
