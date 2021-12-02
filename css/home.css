@@ -73,7 +73,11 @@ nav ul li a    {
   transition: 0.3s ease all;
 }
 nav ul li a:hover   {
-  background: #444;
+  background: #FFFFFF;
+}
+
+nav ul li a:hover   {
+  color: #000000;
 }
 
 /* styling our main content */
@@ -237,7 +241,7 @@ nav ul li a:hover   {
 .projects h2 a {
     color: #FFFFFF;
     text-decoration: none;
-    border-bottom: 1px #D10000 dotted;
+    border-bottom: 1px #D10000 dashed;
 }
 
 .projects-cards-container {
