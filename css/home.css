@@ -19,7 +19,7 @@ body     {
 
 /* styling our header */
 header   {
-  background: #212121;
+  background: #D10000;
   color: #FFF;
   padding: 20px 30px;
   padding: 5px;
@@ -48,7 +48,7 @@ header   {
 }
   /* Style the "active" element to highlight the current page */
  .active   {
-    background-color: rgba(63, 25, 255, 0.64);
+    background-color: rgba(11, 178, 0, 0.69);
     color: white;
 }
 /* main navigation */
@@ -80,7 +80,7 @@ nav ul li a:hover   {
 .hero           {
   min-height: 800px;
   text-align: center;
-  background: linear-gradient(rgba(63, 25, 255, 0.64),#FBDEDF),url(https://github.com/Dolsity/dolsity.github.io/blob/main/img/zoom.jpg?raw=true);
+  background: linear-gradient(rgba(11, 117, 0, 0.20),#FFFFFF),url(https://github.com/Dolsity/dolsity.github.io/blob/main/img/gifxmas.gif?raw=true);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -127,7 +127,7 @@ nav ul li a:hover   {
 /* SKILLS (SECTION 2 / 3) *****************************************************/
 
 .skills-container {
-    background: #212121;
+    background: #D10000;
     display: grid;
     grid-template-columns: minmax(1rem, auto) minmax(auto, 50rem) minmax(1rem, auto);
     grid-template-rows: 1fr;
@@ -136,7 +136,7 @@ nav ul li a:hover   {
 .skills {
     grid-row: 1 / -1;
     grid-column: 2 / 2;
-    color: #37474f;
+    color: #FFFFFF;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -149,7 +149,7 @@ nav ul li a:hover   {
     font-size: 2rem;
     letter-spacing: 0.2rem;
     font-weight: 600;
-    color: #777;
+    color: #FFFFFF;
     margin-bottom: 0.5rem;
     margin-top: 2rem;
 }
@@ -159,7 +159,7 @@ nav ul li a:hover   {
     letter-spacing: 0.1rem;
     font-weight: 200;
     letter-spacing: 2px;
-    color: #777;
+    color: #FFFFFF;
     margin-bottom: 1.5rem;
 }
 
@@ -170,7 +170,7 @@ nav ul li a:hover   {
 
 .skills-card {
     font-family: "Roboto", sans-serif;
-    color: #777;
+    color: #FFFFFF;
     font-size: 1rem;
     font-weight: 200;
     letter-spacing: 0.11rem;
@@ -178,7 +178,7 @@ nav ul li a:hover   {
 
 .skills-card h3 {
     font-size: 1.2rem;
-    color: #777;
+    color: #FFFFFF;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     text-decoration: solid;
@@ -200,7 +200,7 @@ nav ul li a:hover   {
 .projects-container {
     display: grid;
     grid-template-columns: minmax(1rem, auto) minmax(auto, 50rem) minmax(1rem, auto);
-    background: linear-gradient(rgba(251, 35, 255, 0.59),#FBDEDF),url(https://github.com/Dolsity/dolsity.github.io/blob/main/img/smoked.png?raw=true);
+    background: linear-gradient(rgba(11, 117, 0, 0.50),#FBDEDF),url(https://github.com/Dolsity/dolsity.github.io/blob/main/img/gifxmas.gif?raw=true);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -208,7 +208,7 @@ nav ul li a:hover   {
 .projects {
     grid-row: 1 / -1;
     grid-column: 2 / 2;
-    color: #37474f;
+    color: #FFFFFF;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -221,7 +221,7 @@ nav ul li a:hover   {
     font-size: 2rem;
     letter-spacing: 0.2rem;
     font-weight: 600;
-    color: rgba(55, 71, 79, 1);
+    color: #FFFFFF;
     margin-bottom: 0.5rem;
     margin-top: 2rem;
 }
@@ -230,14 +230,14 @@ nav ul li a:hover   {
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
     font-weight: 200;
-    color: rgba(55, 71, 79, 0.9);
+    color: #FFFFFF;
     margin-bottom: 1.5rem;
 }
 
 .projects h2 a {
-    color: rgb(55, 71, 79);
+    color: #FFFFFF;
     text-decoration: none;
-    border-bottom: 1px rgb(55, 71, 79) dotted;
+    border-bottom: 1px #D10000 dotted;
 }
 
 .projects-cards-container {
@@ -294,7 +294,7 @@ nav ul li a:hover   {
 }
 
 #upcoming2 {
-    background: url("https://github.com/Dolsity/dolsity.github.io/blob/main/img/shoot.jpeg?raw=true") no-repeat
+    background: url("https://github.com/Dolsity/dolsity.github.io/blob/main/img/zoom.jpg?raw=true") no-repeat
         center center;
     background-size: cover;
     box-shadow: inset 0 0 0 900px rgba(91, 77, 117, 0.7);
@@ -339,8 +339,8 @@ nav ul li a:hover   {
 
 /* styling our footer */
 footer   {
-  background: #212121;
-  color: #777;
+  background: #D10000;
+  color: #FFFFFF;
   padding: 4px;
   text-align: center;
 }
