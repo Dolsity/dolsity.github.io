@@ -14,24 +14,36 @@ menu.addEventListener('click', mobileMenu);
 const highlightMenu = () => {
   const elem = document.querySelector('.highlight');
   const homeMenu = document.querySelector('#home-page');
-  const aboutMenu = document.querySelector('#skills-page');
+  const skillsMenu = document.querySelector('#skills-page');
   const worksMenu = document.querySelector('#work-page'); 
+  const contactMenu = document.querySelector('#contact-page'); 
   let scrollPos = window.scrollY;
   // console.log(scrollPos);
 
   // adds 'highlight' class to my menu items
   if (window.innerWidth > 960 && scrollPos < 600) {
     homeMenu.classList.add('highlight');
-    aboutMenu.classList.remove('highlight');
+    skillsMenu.classList.remove('highlight');
+    worksMenu.classList.remove('highlight');
+    contactMenu.classList.remove('highlight');
     return;
   } else if (window.innerWidth > 960 && scrollPos < 1400) {
-    aboutMenu.classList.add('highlight');
+    skillsMenu.classList.add('highlight');
     homeMenu.classList.remove('highlight');
     worksMenu.classList.remove('highlight');
+    contactMenu.classList.remove('highlight');
     return;
   } else if (window.innerWidth > 960 && scrollPos < 2345) {
     worksMenu.classList.add('highlight');
-    aboutMenu.classList.remove('highlight');
+    homeMenu.classList.remove('highlight');
+    skillsMenu.classList.remove('highlight');
+    contactMenu.classList.remove('highlight');
+    return;
+  } else if (window.innerWidth > 960 && scrollPos < 3000) {
+    worksMenu.classList.remove('highlight');
+    homeMenu.classList.remove('highlight');
+    skillsMenu.classList.remove('highlight');
+    contactMenu.classList.add('highlight');
     return;
   }
 

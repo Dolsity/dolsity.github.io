@@ -204,7 +204,7 @@ body {
 /* -- Section 1/3-- */
 
 .hero {
-    background: url("https://github.com/Dolsity/dolsity.github.io/blob/main/assets/zoom.jpg?raw=true");
+    background: linear-gradient(#80808069,#258bb38b),url("https://github.com/Dolsity/dolsity.github.io/blob/main/assets/zoom.jpg?raw=true");
     background-attachment: fixed;
     background-size: cover;
     padding: 200px 0;
@@ -343,11 +343,13 @@ body {
 /* -- Section 2/3-- */
 
 .skills-section {
-    background-color: #258ab3;
+    background: linear-gradient(#a5a5a5,#258bb3);
     padding: 10rem 0;
     display: grid;
     grid-template-columns: minmax(1rem, auto) minmax(auto, 50rem) minmax(1rem, auto);
     grid-template-rows: 1fr;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .skills-section-inside {
@@ -414,7 +416,9 @@ body {
 
 /* -- Section 3/3-- */
 .features {
-    background: #131313;
+    background: linear-gradient(#80808069,#258bb38b),url("https://github.com/Dolsity/dolsity.github.io/blob/main/assets/zoom.jpg?raw=true");
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -449,10 +453,9 @@ body {
     flex-direction: column;
     justify-content: center;
     color: #fff; 
-    background-color: #39c8ff;
-    background-image: url("https://github.com/Dolsity/dolsity.github.io/blob/main/assets/bg.jpg?raw=true");
     background-size: cover;
     transition: 0.3s ease-in;
+    background: linear-gradient(#80808069,#258bb38b,#e6e6e68b);
 }
   
 .features__card:nth-child(3) {
