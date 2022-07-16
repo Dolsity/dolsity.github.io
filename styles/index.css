@@ -339,22 +339,6 @@ body {
 
 }
 
-@media screen and (max-width: 380px) {
-    .hero__container_welcome {
-        font-size: 20px;
-        color: #fff;
-        margin-bottom: 24px;
-        font: italic;
-    }
-
-    .hero__container_typer {
-        font-size: 5px;
-        margin-bottom: 24px;
-        color: #fff;
-        font-weight: normal;
-    }
-
-}
 
 /* -- Section 2/3-- */
 
