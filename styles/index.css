@@ -458,6 +458,18 @@ body {
     transition: 0.3s ease-in;
     background: linear-gradient(#80808069,#258bb38b,#e6e6e68b);
 }
+
+.social__icon--code {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 24px;
+
+
+}
+
+.social__icon--code:hover {
+    color: #39c8ff;
+}
   
 .features__card:nth-child(3) {
     background-image: linear-gradient
