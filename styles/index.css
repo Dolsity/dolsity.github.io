@@ -460,9 +460,9 @@ body {
 }
 
 .social__icon--code {
-    text-align: center;
     color: #ffffff;
     margin-top: 24px;
+    align-items: center;
 
 
 }
