@@ -16,7 +16,6 @@ const highlightMenu = () => {
   const homeMenu = document.querySelector('#home-page');
   const skillsMenu = document.querySelector('#skills-page');
   const worksMenu = document.querySelector('#work-page'); 
-  const contactMenu = document.querySelector('#contact-page'); 
   let scrollPos = window.scrollY;
   // console.log(scrollPos);
 
@@ -25,29 +24,20 @@ const highlightMenu = () => {
     homeMenu.classList.add('highlight');
     skillsMenu.classList.remove('highlight');
     worksMenu.classList.remove('highlight');
-    contactMenu.classList.remove('highlight');
     return;
   } else if (window.innerWidth > 960 && scrollPos < 1400) {
     skillsMenu.classList.add('highlight');
     homeMenu.classList.remove('highlight');
     worksMenu.classList.remove('highlight');
-    contactMenu.classList.remove('highlight');
     return;
   } else if (window.innerWidth > 960 && scrollPos < 2345) {
     worksMenu.classList.add('highlight');
     homeMenu.classList.remove('highlight');
     skillsMenu.classList.remove('highlight');
-    contactMenu.classList.remove('highlight');
-    return;
-  } else if (window.innerWidth > 960 && scrollPos < 3000) {
-    worksMenu.classList.remove('highlight');
-    homeMenu.classList.remove('highlight');
-    skillsMenu.classList.remove('highlight');
-    contactMenu.classList.add('highlight');
     return;
   }
 
-  if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
+  if ((elem && window.innerWidth < 960 && scrollPos < 600) || elem) {
     elem.classList.remove('highlight');
   }
 };
