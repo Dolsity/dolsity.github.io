@@ -459,8 +459,11 @@ body {
     background: linear-gradient(#80808069,#258bb38b,#e6e6e68b);
 }
 
-.fa.fa-code {
+.social__icon--code {
     text-align: center;
+}
+
+.fa.fa-code {
     color: #ffffff;
     margin-top: 24px;
 }
