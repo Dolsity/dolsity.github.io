@@ -459,15 +459,13 @@ body {
     background: linear-gradient(#80808069,#258bb38b,#e6e6e68b);
 }
 
-.social__icon--code {
+.fa.fa-code {
+    text-align: center;
     color: #ffffff;
     margin-top: 24px;
-    align-items: center;
-
-
 }
 
-.social__icon--code:hover {
+.fa.fa-code:hover {
     color: #39c8ff;
 }
   
