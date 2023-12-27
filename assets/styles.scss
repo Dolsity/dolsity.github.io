@@ -1,0 +1,45 @@
+---
+---
+@import url('https://unpkg.com/primer/build/build.css');
+@import 'highlight-syntax';
+
+
+* {
+    outline: none !important;
+}
+
+html {
+    scroll-behavior: smooth;
+    min-width: 320px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: #cccccc;
+}
+
+::-webkit-scrollbar {
+    width: 6.5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #3f3d38; /* 8f8778*/
+}
+
+::-webkit-scrollbar-thumb {
+    background: #575146;
+    border: 0px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #766e5f;
+}
+
+h1,
+h2 {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* TODO: NAVIGATION (DESKTOP SECTION 1 / 1) */
