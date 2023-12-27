@@ -1,0 +1,55 @@
+
+plugins:
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jemoji
+
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+
+projects:
+  sort_by: stars
+  # sort_by options:
+  #   - pushed
+  #   - stars
+  limit: 10
+  exclude:
+    archived: false
+    forks: true
+    projects:
+    # - repo-name
+
+social_media:
+  instagram: dolsity
+  # spotify: 
+  tiktok: dolsity
+  github: dolsity
+  youtube: dolsity
+  reddit: dolsity
+  twitch: dolsity
+  discord: 795969792778698763
+  stackoverflow: 20505722
+  twitter: dolsity
+  website: http://dolsity.com
+
+mywork:
+  - name: Fora Discord Bot
+    description: Discover one of the most unusual economies found in a Discord Bot.
+    github_url: https://github.com/Fora-Bot
+    web_url: https://forabot.xyz/
+    image_url: 
+
+  - name: Discord Leveling System (MongoDB)
+    description: Basic source code for implementing a leveling system using MongoDB.
+    github_url: https://github.com/Dolsity/discord-leveling-mongodb
+
+  - name: Discord Leveling System (PostgreSQL)
+    description: Basic source code for implementing a leveling system using PostgreSQL.
+    github_url: https://github.com/Dolsity/discord-leveling-postgresql
