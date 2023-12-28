@@ -1,0 +1,16 @@
+<section class="project_card" style="background-image: url({{ project.image_url }});">
+    <h3>{{ project.name }}</h3>
+    <section class="project_description">
+        {% if project.github_url %}
+            <button class="project_button github_link"
+                onclick="window.open('{{ project.github_url }}', '_blank');"
+                aria-label="GitHub repo for {{ project.name }}"></button>
+        {% endif %}
+        {% if project.web_url %}
+            <button class="project_button website_link"
+                onclick="window.open('{{ project.web_url }}', '_blank');"
+                aria-label="Project link for {{ project.name }}"></button>
+        {% endif %}
+        <p>{{ project.description }}</p>
+    </section>
+</section>
