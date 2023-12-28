@@ -1,6 +1,7 @@
 {% assign primary_color = "#766e5f" %}
 
 {% assign user = site.github.owner %}
+
 {% assign page_title = user.login %}
 {% assign meta_description = "Dolsity is a full-stack developer. Check out his projects here!" %}
 
@@ -12,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="keywords" content="{{ page_title }}">
-    <meta name="author" content="{{ upage_title }}">
+    <meta name="author" content="@{{ page_title }}">
     <meta name="description" content="{{ meta_description }}" />
     <meta property="og:title" content="{{ page_title }}" />
     <meta property="og:site_name" content="{{ page_title }}" />
@@ -23,7 +24,7 @@
     <!-- TITLE -->
     <title>{{ page_title }}</title>
     <!-- STYLESHEETS -->
-    <link href="{{ "/assets/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
+    <link href="{{ "/assets/css/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
@@ -48,7 +49,7 @@
         <!-- NAVIGATION LOGO -->
         <a id="navbar_logo">
           <img src="{{ user.avatar_url }}" alt="dolsity.png">
-          <span>{{ user.login }}</span>
+          <span>{{ page_title }}</span>
         </a> 
         <!-- MOBILE & TABLET NAVIGATION -->
         <div class="navbar_toggle" id="mobile-menu">
@@ -59,18 +60,18 @@
         <!-- DESKTOP & MOBILE NAVIGATION BUTTONS -->
         <ul class="navbar_menu">
           <li class="navbar_item">
-            <a href="#landing" class="navbar_links" id="mylanding">Home</a>
+            <a href="#home" class="navbar_links" id="home">Home</a>
           </li>
           <li class="navbar_item">
-            <a href="#skills" class="navbar_links" id="myskills">My Skills</a>    
+            <a href="#skills" class="navbar_links" id="skills">My Skills</a>    
           </li>
           <li class="navbar_item">
-            <a href="#projects" class="navbar_links" id="mywork">My Work</a>
+            <a href="#projects" class="navbar_links" id="projects">My projects</a>
           </li>
         </ul>
       </div>
     </nav>
   </head>
   <body>
-    {{ user.location }}
-    <!-- <script src="{{ "../scripts/navbar.js" | relative_url }}"></script> -->
+    <!-- FIXME: <script src="{{ "../scripts/navbar.js" | relative_url }}"></script> -->
+    <!-- FIXME: <script src="{{ "../scripts/typewriter.js" | relative_url }}"></script> -->
