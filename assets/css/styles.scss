@@ -116,6 +116,11 @@ h2 {
     }
 }
 
+.highlight_link {
+    border-bottom: 4px solid #ffffffc2;
+}
+
+
 /* -- LANDING (DESKTOP SECTION 1 / 3) #faf0e6 -- */
 .landing_container {
     display: grid;
@@ -585,4 +590,88 @@ h2 {
     }
 }
 
-/* TODO: -- NAVIGATION (MOBILE SECTION 1 / 1) -- */
+
+/* -- TABLET SECTION -- */
+@media screen and (max-width: 850px) {
+    /* -- NAVIGATION (TABLET SECTION 1 / 1) -- */
+    .navbar_container {
+        height: 0px;
+        padding: 0;
+    }
+
+    #navbar_logo {
+        padding-left: 25px;
+    }
+
+    /* NAVIGATION BAR (TABLET) */
+    .navbar_toggle {
+        position: absolute;
+        cursor: pointer;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            transition: all 0.4s ease-in-out;
+            background: #ffffffdc;
+            display: block;
+            cursor: pointer;
+        }
+
+        &.is-active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        &.is-active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        &.is-active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    }
+
+    /* NAVIGATION MENU (TABLET) */
+    .navbar_menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.2s ease;
+        z-index: -1;
+        padding: 0;
+
+        &.active {
+            background: #888571;
+            top: 100%;
+            opacity: 1;
+            transition: all 0.4s ease;
+            z-index: 99;
+            height: 460px;
+            font-size: 1.6rem;
+            padding: 0;
+        }
+
+        .navbar_item {
+            width: 100%;
+
+            .navbar_links {
+                text-align: center;
+                justify-content: center;
+                width: 100%;
+                color: #ffffffdc;
+                font-size: 23px;
+            }
+        }
+    }
+
+    .highlight_link {
+        border-bottom: none;
+    }
+}
