@@ -16,7 +16,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    background: #cccccc;
+    background: #232323;
 }
 
 ::-webkit-scrollbar {
@@ -119,7 +119,7 @@ h2 {
 /* -- LANDING (DESKTOP SECTION 1 / 3) -- */
 .landing_container {
     display: grid;
-    background: linear-gradient(#7d7a69, #7d7a69);
+    background: linear-gradient(#7d7a69, #5f5c4fd3);
     box-sizing: border-box;
     grid-template-columns: minmax(1rem, auto) minmax(auto, 50rem) minmax(1rem, auto);
 }
@@ -348,7 +348,6 @@ h2 {
     h3 {
         font-size: 1.2rem;
         color: #ffffff;
-        font-family: "Open Sans", sans-serif;
         font-weight: 400;
         text-decoration: solid;
         letter-spacing: 0.08rem;
@@ -368,7 +367,7 @@ h2 {
 /* -- MY PROJECTS (DESKTOP SECTION 3 / 3) -- */
 .project_container {
     display: grid;
-    background: linear-gradient(#909090, #7d7a69);
+    background: linear-gradient(#7d7a69e6, #7d7a69);
     box-sizing: border-box;
     grid-template-columns: minmax(1rem, auto) minmax(auto, 50rem) minmax(1rem, auto);
     grid-template-rows: 1fr;
@@ -449,7 +448,6 @@ h2 {
     h3 {
         font-size: 1.2rem;
         color: #ffffff;
-        font-family: "Open Sans", sans-serif;
         font-weight: 400;
         text-decoration: solid;
         letter-spacing: 0.08rem;
@@ -587,3 +585,5 @@ h2 {
         filter: invert(100%);
     }
 }
+
+/* TODO: -- NAVIGATION (MOBILE SECTION 1 / 1) -- */
