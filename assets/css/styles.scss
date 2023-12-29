@@ -689,8 +689,6 @@ h2 {
     /* -- MY SKILLS (TABLET SECTION 2 / 3) -- */
     /* SKILLS TITLES (TABLET) */
     .skills_titles {
-        margin-bottom: 2rem;
-
         h1 {
             font-size: 2rem;
             margin-bottom: 0.7rem;
@@ -750,6 +748,127 @@ h2 {
 
         a {
             font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+    }
+
+    .footer_logo {
+        font-size: 1.7rem;
+    }
+}
+
+/* -- MOBILE SECTION -- */
+@media screen and (max-width: 690px) {
+    /* -- LANDING (MOBILE SECTION 1 / 3) -- */
+    /* LANDING TITLES (MOBILE) */
+    .landing_titles {
+        margin-bottom: 1.4rem;
+
+        h1 {
+            font-size: 2.9rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+        }
+    }
+
+    /* LAPTOP (MOBILE) */
+    .laptop_container {
+        grid-template-columns: 1.3rem 1fr 1.3rem;
+    }
+
+    /* CODE EDITOR */
+    .editor_container {
+        /* CODE EDITOR LINES */
+        .editor_number_line {
+            font-size: 0.7rem;
+        }
+    }
+
+    /* -- MY SKILLS (MOBILE SECTION 2 / 3) -- */
+    /* SKILLS TITLES (MOBILE) */
+    .skills_titles {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .skills_cards_container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+    }
+
+    .skills_card {
+        justify-content: center;
+        text-align: center;
+
+        h3 {
+            font-size: 1rem;
+        }
+        
+        ul {
+            li {
+                font-size: 0.8rem;
+                margin: 0.3rem 0;
+            }
+        }
+    }
+
+    /* -- MY PROJECTS (MOBILE SECTION 3 / 3) -- */
+    /* PROJECTS TITLES (MOBILE) */
+    .project_titles {
+        margin-bottom: 0.7rem;
+        justify-content: center;
+        text-align: center;
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .project_card_container {
+        margin: auto;
+    }
+
+    /* PROJECT CARD (MOBILE) */
+    .project_card {
+        font-size: 0.9rem;
+
+        /* PROJECT CARD TITLES (MOBILE) */
+        h3 {
+            font-size: 1rem;
+            letter-spacing: 0.05rem;
+        }
+    }
+
+    /* -- FOOTER (MOBILE SECTION 1 / 1) -- */
+    .footer_link_items {
+        margin: 10px;
+        width: 130px;
+
+        h2 {
+            margin-bottom: 0.2rem;
+            font-size: 1.1rem;
+        }
+
+        a {
+            font-size: 0.8rem;
             margin-bottom: 0.3rem;
         }
     }
