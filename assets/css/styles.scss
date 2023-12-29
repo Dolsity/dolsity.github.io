@@ -592,7 +592,6 @@ h2 {
     }
 }
 
-
 /* -- TABLET SECTION -- */
 @media screen and (max-width: 850px) {
     /* -- NAVIGATION (TABLET SECTION 1 / 1) -- */
@@ -674,7 +673,6 @@ h2 {
     }
 
     /* -- LANDING (TABLET SECTION 1 / 3) -- */
-
     /* LANDING TITLES (TABLET) */
     .landing_titles {
         margin-bottom: 1.5rem;
@@ -687,7 +685,6 @@ h2 {
             font-size: 1.8rem;
         }
     }
-
 
     /* -- MY SKILLS (TABLET SECTION 2 / 3) -- */
     /* SKILLS TITLES (TABLET) */
@@ -719,8 +716,7 @@ h2 {
     }
 
     /* -- MY PROJECTS (TABLET SECTION 3 / 3) -- */
-
-    /* PROJECTS TITLES (DESKTOP) */
+    /* PROJECTS TITLES (TABLET) */
     .project_titles {
         margin-bottom: 0.8rem;
         
@@ -734,18 +730,18 @@ h2 {
         }
     }
 
-    /* PROJECT CARD (DESKTOP) */
+    /* PROJECT CARD (TABLET) */
     .project_card {
         font-size: 0.9rem;
 
-        /* PROJECT CARD TITLES (DESKTOP) */
+        /* PROJECT CARD TITLES (TABLET) */
         h3 {
             font-size: 1.1rem;
             letter-spacing: 0.06rem;
         }
     }
 
-    /* -- FOOTER (DESKTOP SECTION 1 / 1) -- */
+    /* -- FOOTER (TABLET SECTION 1 / 1) -- */
     .footer_link_items {
         h2 {
             margin-bottom: 0.3rem;
