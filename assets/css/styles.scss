@@ -120,7 +120,6 @@ h2 {
     border-bottom: 4px solid #ffffffc2;
 }
 
-
 /* -- LANDING (DESKTOP SECTION 1 / 3) -- */
 .landing_container {
     display: grid;
@@ -672,6 +671,10 @@ h2 {
         }
     }
 
+    .highlight_link {
+        border-bottom: none;
+    }
+
     /* -- LANDING (TABLET SECTION 1 / 3) -- */
     /* LANDING TITLES (TABLET) */
     .landing_titles {
@@ -736,6 +739,16 @@ h2 {
         h3 {
             font-size: 1.1rem;
             letter-spacing: 0.06rem;
+        }
+
+        &:active h3 {
+            margin-top: -13.5rem;
+            transition: margin 0.5s;
+        }
+
+        &:active section {
+            top: 2rem;
+            transition: top 0.5s;
         }
     }
 
