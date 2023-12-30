@@ -740,16 +740,6 @@ h2 {
             font-size: 1.1rem;
             letter-spacing: 0.06rem;
         }
-
-        &:active h3 {
-            margin-top: -13.5rem;
-            transition: margin 0.5s;
-        }
-
-        &:active section {
-            top: 2rem;
-            transition: top 0.5s;
-        }
     }
 
     /* -- FOOTER (TABLET SECTION 1 / 1) -- */
@@ -815,11 +805,6 @@ h2 {
         h2 {
             font-size: 1.2rem;
         }
-    }
-
-    .skills_cards_container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
     }
 
     .skills_card {
