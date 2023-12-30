@@ -50,7 +50,7 @@
         <a id="navbar_logo">
           <img src="{{ user.avatar_url }}" alt="dolsity.png">
           <span>{{ page_title }}</span>
-        </a> 
+        </a>
         <!-- MOBILE & TABLET NAVIGATION -->
         <div class="navbar_toggle" id="mobile_menu">
           <span class="bar"></span>
@@ -60,13 +60,13 @@
         <!-- DESKTOP & MOBILE NAVIGATION BUTTONS -->
         <ul class="navbar_menu">
           <li class="navbar_item">
-            <a href="#home" class="navbar_links" id="home_section">Home</a>
+            <a href="#home" class="navbar_links" id="home_section" onclick="hideMobileMenu()">Home</a>
           </li>
           <li class="navbar_item">
-            <a href="#skills" class="navbar_links" id="skills_section">My Skills</a>    
+            <a href="#skills" class="navbar_links" id="skills_section" onclick="hideMobileMenu()">My Skills</a>    
           </li>
           <li class="navbar_item">
-            <a href="#projects" class="navbar_links" id="projects_section">My projects</a>
+            <a href="#projects" class="navbar_links" id="projects_section" onclick="hideMobileMenu()">My projects</a>
           </li>
         </ul>
       </div>
