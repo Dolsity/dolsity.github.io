@@ -1,7 +1,5 @@
 {% assign primary_color = "#766e5f" %}
-
 {% assign user = site.github.owner %}
-
 {% assign page_title = user.login %}
 {% assign meta_description = "Dolsity is a full-stack developer. Check out his projects here!" %}
 
@@ -42,6 +40,9 @@
     <link rel="mask-icon" href="{{ user.avatar_url }}">
     <meta name="msapplication-TileColor" content="{{ primary_color }}">
     <meta name="theme-color" content="{{ primary_color }}">
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
     <!-- NAVIGATION -->
     <nav class="navbar">
@@ -60,18 +61,19 @@
         <!-- DESKTOP & MOBILE NAVIGATION BUTTONS -->
         <ul class="navbar_menu">
           <li class="navbar_item">
-            <a href="#home" class="navbar_links" id="home_section" onclick="hideMobileMenu()">Home</a>
+            <a href="#home" class="navbar_links" id="home_section">Home</a>
           </li>
           <li class="navbar_item">
-            <a href="#skills" class="navbar_links" id="skills_section" onclick="hideMobileMenu()">My Skills</a>    
+            <a href="#skills" class="navbar_links" id="skills_section">My Skills</a>    
           </li>
           <li class="navbar_item">
-            <a href="#projects" class="navbar_links" id="projects_section" onclick="hideMobileMenu()">My projects</a>
+            <a href="#projects" class="navbar_links" id="projects_section">My projects</a>
           </li>
         </ul>
       </div>
     </nav>
   </head>
   <body>
+    <!-- SCRIPTS -->
     <script src="{{ "./scripts/navbar.js" | relative_url }}"></script>
-    <!-- FIXME: <script src="{{ "../scripts/typewriter.js" | relative_url }}"></script> -->
+    <script src="{{ "../scripts/typewriter.js" | relative_url }}"></script>
