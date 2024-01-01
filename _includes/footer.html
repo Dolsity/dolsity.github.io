@@ -1,0 +1,46 @@
+        <!-- FOOTER -->
+        <footer class="footer_container">
+            <section class="footer">
+                <section class="footer_links">
+                    <!-- CARD -->
+                    <section class="footer_wrapper">
+                        <div class="footer_link_items">
+                            <h2>Contact Me</h2>
+                            <a href="https://www.instagram.com/dolsity/?hl=en" target="_blank" rel="nofollow noopener">Instagram</a>
+                            <a href="https://discord.com/users/795969792778698763" target="_blank" rel="nofollow noopener">Discord</a>
+                            <a href="https://www.reddit.com/user/Dolsity" target="_blank" rel="nofollow noopener">Reddit</a>
+                        </div>
+                    </section>
+                    <!-- CARD -->
+                    <section class="footer_wrapper">
+                        <div class="footer_link_items">
+                            <h2>Social Media</h2>
+                            <a href="https://www.youtube.com/channel/UCeg0bjKUXQqYlWh3xsGY5YA" target="_blank" rel="nofollow noopener">Youtube</a> 
+                            <a href="https://www.twitch.tv/dolsity" target="_blank" rel="nofollow noopener">Twitch</a>
+                            <a href="https://www.tiktok.com/@dolsity?lang=en" target="_blank" rel="nofollow noopener">TikTok</a>
+                        </div>
+                    </section>
+                </section>
+                <!-- SOCIAL MEDIA -->
+                <section class="social_media">
+                    <section class="social_media_wrapper">
+                        <div class="footer_logo">
+                            <a href="/">Dolsity</a>
+                        </div>
+                        <p>Dolsity © 2024</p>
+                        {% if site.social_media %}
+                            <div class="social_icons">
+                                {% for account in site.social_media %}
+                                    {% assign service_shortname = account[0] %}
+                                    {% assign service = site.data.social_media[service_shortname] %}
+                                    <a href="{{ service.profile_url_prefix }}{{ account[1] }}" target="_blank" class="tooltipped tooltipped-se" id="social_icon_link" aria-label="@{{ account[1] }}">  <!-- aria-label="{{ service.name }}: {{ account[1] }}"> -->
+                                        {{ service.icon_svg }}<span class="d-none">{{ service.name }}</span></a>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </section>
+                </section>
+            </section>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+
+plugins:
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jemoji
+
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+
+skills:
+  - category: Languages
+    skills: [Python, JavaScript, HTML/CSS, C++, SASS]
+  - category: Tools/Software
+    skills: [Docker, Git, GitHub, VS Code, CLion, Arduino IDE, PyCharm]
+  - category: Frameworks/Libraries
+    skills: [Flask, React, Pillow, Nextcord, PyMongo, Discord.py, Discord.js]
+  - category: Database/Cloud Hosting
+    skills: [PostgreSQL, MongoDB, GitHub Pages, Heroku, DigitalOcean, AWS]
+  - category: Other
+    skills: [Web Performance, End-to-End Testing, Accessibility, SEO]
+
+projects:
+  - name: Fora Discord Bot
+    description: Discover one of the most unusual economies found in a Discord Bot.
+    github_url: https://github.com/Fora-Bot
+    web_url: https://forabot.xyz/
+    image_url: "./assets/img/forabot.png"
+
+  - name: Discord Leveling System (MongoDB)
+    description: Basic source code for implementing a leveling system using MongoDB.
+    github_url: https://github.com/Dolsity/discord-leveling-mongodb
+    web_url: 
+    image_url: "./assets/img/mongodb.png"
+
+  - name: Discord Leveling System (PostgreSQL)
+    description: Basic source code for implementing a leveling system using PostgreSQL.
+    github_url: https://github.com/Dolsity/discord-leveling-postgresql
+    web_url: 
+    image_url: "./assets/img/postgresql.png"
+
+github_projects:
+  sort_by: stars
+  # sort_by options:
+  #   - pushed
+  #   - stars
+  limit: 10
+  exclude:
+    archived: false
+    forks: true
+    github_projects:
+    # - repo-name
+
+social_media:
+  instagram: dolsity
+  # spotify: 
+  # tiktok: dolsity
+  github: dolsity
+  # youtube: dolsity
+  # reddit: dolsity
+  # twitch: dolsity
+  # discord: 795969792778698763
+  stackoverflow: 20505722
+  twitter: dolsity
+  # website: http://dolsity.com
