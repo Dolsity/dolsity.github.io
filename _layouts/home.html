@@ -46,23 +46,16 @@
                 <!-- SKILLS TITLES -->
                 <section class="skills_titles">
                     <h1>My Skills</h1>
-                    <h2>Languages, tools, and everything in-between that I've taken time to learn and use</h2>
+                    <h2>Languages, tools, and everything in-between that I've taken time to learn and use.</h2>
                 </section>
                 <!-- SKILL CARD CONTAINER -->
                 <section class="skills_cards_container">
                     <!-- SKILL CARDS -->
-                        {% if site.skills %}
-                            {% for skill in site.skills %}
-                            <section class="skills_card">
-                                <h3>{{ skill.category }}</h3>
-                                <ul>
-                                    {% for skill in skill.skills %}
-                                        <li>{{ skill }}</li>
-                                    {% endfor %}
-                                </ul>
-                            </section>
-                            {% endfor %}
-                        {% endif %}
+                    {% if site.skills %}
+                        {% for skill in site.skills %}
+                            {% include skill-card.html %}
+                        {% endfor %}
+                    {% endif %}
                 </section>   
             </section>         
         </article>
