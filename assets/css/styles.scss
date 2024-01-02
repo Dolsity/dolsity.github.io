@@ -510,16 +510,19 @@ h2 {
         text-decoration: solid;
         letter-spacing: 0.08rem;
         transition: margin 0.5s;
+        -webkit-transition: margin 0.5s;  /* Safari */
     }
 
     &:hover h3 {
         margin-top: -13.5rem;
         transition: margin 0.5s;
+        -webkit-transition: margin 0.5s;  /* Safari */
     }
 
     &:hover section {
         top: 2rem;
         transition: top 0.5s;
+        -webkit-transition: top 0.5s;  /* Safari */
     }
 }
 
