@@ -27,23 +27,17 @@ skills:
     skills: [Web Performance, End-to-End Testing, Accessibility, SEO]
 
 projects:
-  - name: Fora Discord Bot
+  - name: Fora Bot
     description: Discover one of the most unusual economies found in a Discord Bot.
     github_url: https://github.com/Fora-Bot
     web_url: https://forabot.xyz/
     image_url: "./assets/img/forabot.png"
 
-  - name: Discord Leveling System (MongoDB)
-    description: Basic source code for implementing a leveling system using MongoDB.
-    github_url: https://github.com/Dolsity/discord-leveling-mongodb
-    web_url: 
-    image_url: "./assets/img/mongodb.png"
-
-  - name: Discord Leveling System (PostgreSQL)
-    description: Basic source code for implementing a leveling system using PostgreSQL.
-    github_url: https://github.com/Dolsity/discord-leveling-postgresql
-    web_url: 
-    image_url: "./assets/img/postgresql.png"
+  - name: Link in Bio
+    description: A simple link in bio website only using HTML5/CSS3.
+    github_url: https://github.com/Dolsity/link-in-bio
+    web_url: https://dolsity.github.io/link-in-bio
+    image_url: "./assets/img/link-in-bio.png"
 
 github_projects:
   sort_by: stars
