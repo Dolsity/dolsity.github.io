@@ -1,5 +1,10 @@
-<section class="project_card" style="background-image: url({{ project.image_url }});">
-    <h3>{{ project.name }}</h3>
+<section class="project_card">
+    <section class="project_image">
+        <img src="{{ project.image_url }}" alt="{{ project.name }}.png" />
+    </section>
+    <section class="project_title">
+        <h3>{{ project.name }}</h3>
+    </section>
     <section class="project_description">
         {% if project.github_url %}
             <button class="project_button github_link"

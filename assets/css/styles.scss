@@ -482,58 +482,60 @@ h2 {
 
 /* PROJECT CARD (DESKTOP) */
 .project_card {
-    position: relative;
-    overflow: hidden;
-    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 18rem;
     flex-shrink: 1;
     flex-grow: 1;
     flex-basis: 33%;
-    display: -webkit-box;  /* Safari */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     margin: 1.5rem;
     border-radius: 3px;
     color: #ffffff;
-    font-size: 1rem;
-    font-weight: 200;
-    text-align: center;
     box-shadow: inset 0 0 0 900px #766e5f96;
-    -webkit-box-shadow: inset 0 0 0 900px #766e5f96;  /* Safari */
-    background: center / cover no-repeat;
+    border: #766e5fcc 1px solid;
+
+    .project_image {
+        height: 8rem;
+        border-radius: 3px 3px 0 0;
+        overflow: hidden;
+        box-shadow: inset 0 0 0 900px #766e5f96;
+
+        img {
+            border-radius: 3px 3px 0 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: #766e5f96 linear-gradient(#766e5f96, #766e5f96);
+        }
+    }
 
     /* PROJECT CARD TITLES (DESKTOP) */
-    h3 {
-        font-size: 1.2rem;
-        color: #ffffff;
-        font-weight: 400;
-        text-decoration: solid;
-        letter-spacing: 0.08rem;
-        transition: margin 0.5s;
-        -webkit-transition: margin 0.5s;  /* Safari */
-    }
+    .project_title {
+        display: flex;
+        background-color: #766e5fbf;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
 
-    &:hover h3 {
-        margin-top: -13.5rem;
-        transition: margin 0.5s;
-        -webkit-transition: margin 0.5s;  /* Safari */
-    }
-
-    &:hover section {
-        top: 2rem;
-        transition: top 0.5s;
-        -webkit-transition: top 0.5s;  /* Safari */
+        h3 {
+            font-size: 1.2rem;
+            color: #ffffff;
+            font-weight: 400;
+            text-decoration: solid;
+            letter-spacing: 0.08rem;
+            padding: 0 0.5rem;
+            margin: 0.5rem 0;
+        }
     }
 }
 
 /* PROJECT CARD DESCRIPTION (DESKTOP) */
 .project_description {
-    position: absolute;
-    top: 10rem;
-    transition: top 0.5s;
-    -webkit-transition: top 0.5s;  /* Safari */
-    padding: 0 1rem;
     font-weight: 400;
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
 
     .github_link {
         background: transparent url("../svg/ic_code_white_48px.svg");
@@ -544,6 +546,7 @@ h2 {
         width: 2rem;
         height: 2rem;
     }
+
     .website_link {
         background: transparent url("../svg/ic_web_white_48px.svg");
         background-size: cover;
@@ -793,7 +796,7 @@ h2 {
         font-size: 0.9rem;
 
         /* PROJECT CARD TITLES (TABLET) */
-        h3 {
+        .project_title h3 {
             font-size: 1.1rem;
             letter-spacing: 0.06rem;
         }
@@ -913,7 +916,7 @@ h2 {
         font-size: 0.9rem;
 
         /* PROJECT CARD TITLES (MOBILE) */
-        h3 {
+        .project_title h3 {
             font-size: 1rem;
             letter-spacing: 0.05rem;
         }
