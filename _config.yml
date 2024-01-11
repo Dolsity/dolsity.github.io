@@ -36,7 +36,7 @@ projects:
   - name: Link in Bio
     description: A simple link in bio website only using HTML5/CSS3.
     github_url: https://github.com/Dolsity/link-in-bio
-    web_url: https://dolsity.github.io/link-in-bio
+    web_url: https://dolsity.com/link-in-bio
     image_url: "./assets/img/link-in-bio.png"
 
 github_projects:
