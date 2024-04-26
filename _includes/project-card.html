@@ -1,6 +1,6 @@
 <section class="project_card">
     <section class="project_image">
-        <img src="{{ project.image_url }}" alt="{{ project.name }}.png" />
+        <img src="{{ project.image_url }}" alt="{% if project.image_url %}{{ project.name }}.png{% endif %}" />
     </section>
     <section class="project_title">
         <h3>{{ project.name }}</h3>
@@ -15,6 +15,9 @@
             <button class="project_button website_link"
                 onclick="window.open('{{ project.web_url }}', '_blank');"
                 aria-label="Project link for {{ project.name }}"></button>
+        {% endif %}
+        {% if project.under_dev %}
+            <h6 class="under_dev">Under Development</h6>
         {% endif %}
         <p>{{ project.description }}</p>
     </section>
