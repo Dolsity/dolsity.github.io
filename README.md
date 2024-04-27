@@ -1,4 +1,5 @@
 # DOLSITY.COM<h1 align="center">
+<h1 align="center">
   <br>
     <a href="https://dolsity.com"><img width="25%" src="https://avatars.githubusercontent.com/u/84829249" alt="Dolsity"></a>
   <br>
