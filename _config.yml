@@ -17,9 +17,9 @@ skills:
   - category: Languages
     skills: [Python, JavaScript, HTML/CSS, C++, SASS]
   - category: Tools/Software
-    skills: [Docker, Git, GitHub, VS Code, CLion, Arduino IDE, PyCharm]
+    skills: [Vite, Docker, Git, GitHub, VS Code, CLion, Arduino IDE, PyCharm]
   - category: Frameworks/Libraries
-    skills: [Flask, React, Pillow, Nextcord, PyMongo, Discord.py, Discord.js]
+    skills: [React, Flask, Pillow, Nextcord, PyMongo, Discord.py, Discord.js]
   - category: Database/Cloud Hosting
     skills: [PostgreSQL, MongoDB, GitHub Pages, Heroku, DigitalOcean, AWS]
   - category: Other
@@ -40,8 +40,8 @@ projects:
     under_dev: false
     image_url: "./assets/img/forabot.png"
 
-  - name: Spotify Stat Viewer
-    description: A simple website to view your Spotify stats.
+  - name: Spotify Stats Viewer
+    description: A website to view your Spotify stats.
     github_url: https://github.com/Dolsity/spotify-web-api
     web_url: # No website posted
     under_dev: true
