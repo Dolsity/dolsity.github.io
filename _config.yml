@@ -13,6 +13,13 @@ defaults:
     values:
       layout: "post"
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+
 skills:
   - category: Languages
     skills: [Python, JavaScript, HTML/CSS, C++, SASS]
