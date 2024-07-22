@@ -83,4 +83,6 @@
   </head>
   <body>
     <!-- SCRIPTS -->
-    <script src="{{ "./scripts/navbar.js" | relative_url }}"></script>
+    {% if page.url != "/404.html" %}
+      <script src="{{ "./scripts/navbar.js" | relative_url }}"></script>
+    {% endif %}
