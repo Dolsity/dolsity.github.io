@@ -33,13 +33,6 @@ skills:
     skills: [Web Performance, End-to-End Testing, Accessibility, SEO]
 
 projects:
-  - name: Link in Bio
-    description: A simple link in bio website only using HTML5/CSS3.
-    github_url: https://github.com/Dolsity/link-in-bio
-    web_url: https://dolsity.com/link-in-bio
-    under_dev: false
-    image_url: "./assets/img/link-in-bio.png"
-
   - name: Fora Bot
     description: Discover one of the most unusual economies found in a Discord Bot.
     github_url: https://github.com/Fora-Bot
@@ -47,12 +40,13 @@ projects:
     under_dev: false
     image_url: "./assets/img/forabot.png"
 
-  - name: Spotify Stats Viewer
-    description: A website to view your Spotify stats.
-    github_url: https://github.com/Dolsity/spotify-web-api
-    web_url: # No website posted
-    under_dev: true
-    image_url: # No image posted
+  - name: Link in Bio
+    description: A simple link in bio website only using HTML5/CSS3.
+    github_url: https://github.com/Dolsity/link-in-bio
+    web_url: https://dolsity.com/link-in-bio
+    under_dev: false
+    image_url: "./assets/img/link-in-bio.png"
+
 
 github_projects:
   sort_by: stars
@@ -78,3 +72,41 @@ social_media:
   stackoverflow: 20505722
   twitter: dolsity
   # website: http://dolsity.com
+
+
+link_tree:
+  - catagory: Other Socials
+    links:
+      - name: Instagram
+        url: https://instagram.com/dolsity
+      - name: GitHub
+        url:
+
+  - catagory: Programming
+    links:
+      - name: Stack Overflow
+        url: https://stackoverflow.com/users/20505722/dolsity
+      - name: GitHub
+        url:
+
+  - name: About Me
+    url: "/about"
+    icon: user
+  - name: Instagram
+    url: https://instagram.com/dolsity
+    icon: instagram
+  - name: GitHub
+    url:
+    icon: github
+  - name: Stack Overflow
+    url: https://stackoverflow.com/users/20505722/dolsity
+    icon: stack-overflow
+  - name: reddit
+    url: https://reddit.com/u/dolsity
+    icon: Reddit
+  - name: Discord
+    url: https://discord.com/users/795969792778698763
+    icon: discord
+  - name: twitch
+    url: https://twitch.tv/dolsity
+    icon: Twitch
