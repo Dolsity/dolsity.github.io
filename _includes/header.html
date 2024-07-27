@@ -1,7 +1,13 @@
 {% assign primary_color = "#766e5f" %}
 {% assign user = site.github.owner %}
-{% assign page_title = user.login %}
-{% assign meta_description = "Dolsity is a full-stack developer. Check out his projects here!" %}
+
+{% assign username = user.login %}
+{% assign mention_username = "@" | append: username | downcase %}
+
+{% assign user_name = user.name %}
+{% if user_name == null %}
+  {% assign user_name = username %}
+{% endif %}
 
 <!DOCTYPE html>
 <html class="min-height-full">
@@ -10,17 +16,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="keywords" content="{{ page_title }}">
-    <meta name="author" content="@{{ page_title }}">
-    <meta name="description" content="{{ meta_description }}" />
-    <meta property="og:title" content="{{ page_title }}" />
-    <meta property="og:site_name" content="{{ page_title }}" />
-    <meta property="og:description" content="{{ meta_description }}" />
+    <meta name="keywords" content="{{ username }}">
+    <meta name="author" content="{{ username }}">
+    <meta name="description" content="{{ user_name }} ({{ mention_username }}) is a full-stack developer. Check out his projects here!" />
+    <meta property="og:title" content="{{ user_name }} ({{ mention_username }})" />
+    <meta property="og:site_name" content="{{ username }}" />
+    <meta property="og:description" content="{{ user_name }} ({{ mention_username }}) is a full-stack developer. Check out his projects here!" />
     <meta property="og:image" content="{{ user.avatar_url }}" />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
     <!-- TITLE -->
-    <title>{{ page_title }}</title>
+    <title>{{ username }}</title>
     <!-- STYLESHEETS -->
     <link href="{{ "./assets/css/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
@@ -48,32 +54,35 @@
     <nav class="navbar">
       <div class="navbar_container">
         <!-- NAVIGATION LOGO -->
-        <a id="navbar_logo">
+        <a href="/" id="navbar_logo">
           <img src="{{ user.avatar_url }}" alt="dolsity.png">
-          <span>{{ page_title }}</span>
+          <span>{{ username }}</span>
         </a>
-        <!-- MOBILE & TABLET NAVIGATION -->
-        <div class="navbar_toggle" id="mobile_menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <!-- DESKTOP & MOBILE NAVIGATION BUTTONS -->
-        <ul class="navbar_menu">
-          <li class="navbar_item">
-            <a href="#home" class="navbar_links" id="home_section">Home</a>
-          </li>
-          <li class="navbar_item">
-            <a href="#skills" class="navbar_links" id="skills_section">My Skills</a>    
-          </li>
-          <li class="navbar_item">
-            <a href="#projects" class="navbar_links" id="projects_section">My projects</a>
-          </li>
-        </ul>
+        {% if page.url != "/404.html" %}
+          <!-- MOBILE & TABLET NAVIGATION -->
+          <div class="navbar_toggle" id="mobile_menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <!-- DESKTOP & MOBILE NAVIGATION BUTTONS -->
+          <ul class="navbar_menu">
+            <li class="navbar_item">
+              <a href="#home" class="navbar_links" id="home_section">Home</a>
+            </li>
+            <li class="navbar_item">
+              <a href="#skills" class="navbar_links" id="skills_section">My Skills</a>    
+            </li>
+            <li class="navbar_item">
+              <a href="#projects" class="navbar_links" id="projects_section">My projects</a>
+            </li>
+          </ul>
+        {% endif %}
       </div>
     </nav>
   </head>
   <body>
     <!-- SCRIPTS -->
-    <script src="{{ "./scripts/navbar.js" | relative_url }}"></script>
-    <script src="{{ "../scripts/typewriter.js" | relative_url }}"></script>
+    {% if page.url != "/404.html" %}
+      <script src="{{ "./scripts/navbar.js" | relative_url }}"></script>
+    {% endif %}
