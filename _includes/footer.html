@@ -26,13 +26,13 @@
                         <div class="footer_logo">
                             <a href="/">Dolsity</a>
                         </div>
-                        <p>Dolsity © 2024</p>
+                        <p>Dolsity © 2025</p>
                         {% if site.social_media %}
                             <div class="social_icons">
                                 {% for account in site.social_media %}
                                     {% assign service_shortname = account[0] %}
                                     {% assign service = site.data.social_media[service_shortname] %}
-                                    <a href="{{ service.profile_url_prefix }}{{ account[1] }}" target="_blank" class="tooltipped tooltipped-se" id="social_icon_link" aria-label="@{{ account[1] }}">  <!-- aria-label="{{ service.name }}: {{ account[1] }}"> -->
+                                    <a href="{{ service.profile_url_prefix }}{{ account[1] }}" target="_blank" class="tooltipped tooltipped-se" id="social_icon_link" aria-label="@{{ account[1] }}"> <!-- aria-label="{{ service.name }}: @{{ account[1] }}"> -->
                                         {{ service.icon_svg }}<span class="d-none">{{ service.name }}</span></a>
                                 {% endfor %}
                             </div>

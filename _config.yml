@@ -36,7 +36,7 @@ projects:
   - name: Fora Bot
     description: Discover one of the most unusual economies found in a Discord Bot.
     github_url: https://github.com/Fora-Bot
-    web_url: https://forabot.xyz/
+    # web_url:
     under_dev: false
     image_url: "./assets/img/forabot.png"
 
