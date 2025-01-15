@@ -654,10 +654,11 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 240px;
+    width: 200px;
 
     a {
         filter: invert(95%);
+        margin: 0 0.5rem;  // Spacing between icons
     }
 }
 
