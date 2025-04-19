@@ -12,11 +12,11 @@
     <a href="https://dolsity.com/">
         <img alt="Website" src="https://img.shields.io/website?down_message=Offline&label=dolsity.com&up_color=bright-green&up_message=Online&url=https%3A%2F%2Fdolsity.com">
     </a>
-    <a href="https://github.com/dolsity/Discord-Economy-Bot/issues">
-        <img alt="Issues" src="https://img.shields.io/github/issues/dolsity/Fora?color=0088ff" />
+    <a href="https://github.com/dolsity/dolsity.github.io/issues">
+        <img alt="Issues" src="https://img.shields.io/github/issues/dolsity/dolsity.github.io?color=0088ff" />
     </a>
-    <a href="https://github.com/dolsity/Discord-Economy-Bot/pulls">
-        <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/dolsity/Fora?color=0088ff" />
+    <a href="https://github.com/dolsity/dolsity.github.io/pulls">
+        <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/dolsity/dolsity.github.io?color=0088ff" />
     </a>
 </section>
 
