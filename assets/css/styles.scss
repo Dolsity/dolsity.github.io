@@ -485,7 +485,6 @@ h2 {
 .project_card {
     display: flex;
     flex-direction: column;
-    min-height: 18rem;
     flex-shrink: 1;
     flex-grow: 1;
     flex-basis: 33%;
@@ -558,13 +557,8 @@ h2 {
         }
     }
 
-    h6 {
-        margin: none;
-        color: #ff8a8a;
-    }
-
     p {
-        margin: 0.5rem 0 0 0;
+        margin: 0;
     }
 }
 
