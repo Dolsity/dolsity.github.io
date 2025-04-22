@@ -74,7 +74,7 @@
               <a href="#skills" class="navbar_links" id="skills_section">My Skills</a>    
             </li>
             <li class="navbar_item">
-              <a href="#projects" class="navbar_links" id="projects_section">My projects</a>
+              <a href="#projects" class="navbar_links" id="projects_section">My Projects</a>
             </li>
           </ul>
         {% endif %}
@@ -83,6 +83,4 @@
   </head>
   <body>
     <!-- SCRIPTS -->
-    {% if page.url != "/404.html" %}
-      <script src="{{ "./scripts/navbar.js" | relative_url }}"></script>
-    {% endif %}
+    <script src="{{ "./scripts/navbar.js" | relative_url }}"></script>

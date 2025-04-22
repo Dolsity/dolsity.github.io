@@ -16,9 +16,6 @@
                 onclick="window.open('{{ project.web_url }}', '_blank');"
                 aria-label="Project link for {{ project.name }}"></button>
         {% endif %}
-        {% if project.under_dev %}
-            <h6 class="under_dev">Under Development</h6>
-        {% endif %}
         <p>{{ project.description }}</p>
     </section>
 </section>
