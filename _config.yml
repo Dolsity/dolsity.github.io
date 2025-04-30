@@ -3,8 +3,6 @@ plugins:
   - jekyll-github-metadata
   - jemoji
 
-permalink: /:year/:month/:day/:title/
-
 defaults:
   -
     scope:
@@ -16,7 +14,7 @@ defaults:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - LICENSE
+  - LICENSE.txt
   - README.md
   - CNAME
 
@@ -45,19 +43,6 @@ projects:
     web_url: https://dolsity.com/link-in-bio
     image_url: "./assets/img/link-in-bio.png"
 
-
-github_projects:
-  sort_by: stars
-  # sort_by options:
-  #   - pushed
-  #   - stars
-  limit: 10
-  exclude:
-    archived: false
-    forks: true
-    github_projects:
-    # - repo-name
-
 social_media:
   instagram: dolsity
   # spotify: 
@@ -70,41 +55,3 @@ social_media:
   stackoverflow: 20505722
   # twitter: dolsity
   # website: http://dolsity.com
-
-
-link_tree:
-  - catagory: Other Socials
-    links:
-      - name: Instagram
-        url: https://instagram.com/dolsity
-      - name: GitHub
-        url:
-
-  - catagory: Programming
-    links:
-      - name: Stack Overflow
-        url: https://stackoverflow.com/users/20505722/dolsity
-      - name: GitHub
-        url:
-
-  - name: About Me
-    url: "/about"
-    icon: user
-  - name: Instagram
-    url: https://instagram.com/dolsity
-    icon: instagram
-  - name: GitHub
-    url:
-    icon: github
-  - name: Stack Overflow
-    url: https://stackoverflow.com/users/20505722/dolsity
-    icon: stack-overflow
-  - name: reddit
-    url: https://reddit.com/u/dolsity
-    icon: Reddit
-  - name: Discord
-    url: https://discord.com/users/795969792778698763
-    icon: discord
-  - name: twitch
-    url: https://twitch.tv/dolsity
-    icon: Twitch
