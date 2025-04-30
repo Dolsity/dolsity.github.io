@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     typewriter
         .typeString(
-            '<span class="purple">import</span> <span class="tan">Human</span>'
+            '<span class="purple">import</span> <span class="tan">human</span>'
         )
         .pauseFor(500)
         .typeString("<br>")
