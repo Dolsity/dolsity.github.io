@@ -53,11 +53,15 @@
     <!-- NAVIGATION -->
     <nav class="navbar">
       <div class="navbar_container">
-        <!-- NAVIGATION LOGO -->
-        <a href="/" id="navbar_logo">
-          <img src="{{ user.avatar_url }}" alt="dolsity.png">
-          <span>{{ username }}</span>
+        <!-- NAVIGATION LOGO  -->
+        <a href="/" id="navbar_logo" aria-label="{{ username }}">
+          <span class="logo_angle" aria-hidden="true">&lt;</span>
+          <span class="logo_text">{{ username }}</span>
+          <span class="logo_angle" aria-hidden="true">
+            <span class="logo_slash">/</span>&gt;
+          </span>
         </a>
+
         {% if page.url != "/404.html" %}
           <!-- MOBILE & TABLET NAVIGATION -->
           <div class="navbar_toggle" id="mobile_menu">
