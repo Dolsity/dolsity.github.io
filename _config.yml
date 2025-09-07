@@ -20,11 +20,11 @@ exclude:
 
 skills:
   - category: Languages
-    skills: [Python, JavaScript, HTML/CSS, C++, SASS]
+    skills: [Python, JavaScript, TypeScript, HTML/CSS, C++, SASS]
   - category: Tools/Software
     skills: [Vite, Docker, Git, GitHub, VS Code, CLion, Arduino IDE, PyCharm]
   - category: Frameworks/Libraries
-    skills: [React, Flask, Pillow, Nextcord, PyMongo, Discord.py, Discord.js]
+    skills: [React, Redux, Material-UI, Flask, PyMongo, Pillow, Nextcord, Discord.py, Discord.js]
   - category: Database/Cloud Hosting
     skills: [PostgreSQL, MongoDB, GitHub Pages, Heroku, DigitalOcean, AWS]
   - category: Other
