@@ -679,13 +679,22 @@ h2 {
 
 .social_icons {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 200px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    --icon-size: 24px;
+    --gap-x: 0.6rem;
+    --gap-y: 0.6rem;
+    gap: var(--gap-y) var(--gap-x);
+    max-width: calc(5 * var(--icon-size) + 4 * var(--gap-x));
 
     a {
         filter: invert(95%);
-        margin: 0 0.5rem;  // Spacing between icons
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--icon-size);
+        height: var(--icon-size);
     }
 }
 
